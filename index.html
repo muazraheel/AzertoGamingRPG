@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azerto Gaming RPG - Ultimate SAMP Experience</title>
+    <meta name="description" content="Join Azerto Gaming RPG, the ultimate San Andreas Multiplayer server with custom scripts, epic roleplay scenarios, and an amazing community.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="nav-logo">
+                        <i data-lucide="gamepad-2"></i>
+                    </div>
+                    <span class="nav-title">Azerto Gaming RPG</span>
+                </div>
+                
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')" class="nav-link">
+                        Home
+                        <span class="nav-underline"></span>
+                    </button>
+                    <button onclick="scrollToSection('about')" class="nav-link">
+                        About Us
+                        <span class="nav-underline"></span>
+                    </button>
+                    <button onclick="scrollToSection('features')" class="nav-link">
+                        Features
+                        <span class="nav-underline"></span>
+                    </button>
+                    <button onclick="scrollToSection('forums')" class="nav-link">
+                        Forums
+                        <span class="nav-underline"></span>
+                    </button>
+                    <button class="btn btn-primary">Join Server</button>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AZERTO GAMING</span>
+                </h1>
+                <h2 class="hero-subtitle">Ultimate SAMP Experience</h2>
+                <p class="hero-description">
+                    Join the most immersive San Andreas Multiplayer server with custom scripts, 
+                    epic roleplay scenarios, and an amazing community.
+                </p>
+            </div>
+            
+            <!-- Server Stats -->
+            <div class="stats-grid">
+                <div class="stat-card stat-accent">
+                    <div class="stat-number">247</div>
+                    <div class="stat-label">Players Online</div>
+                </div>
+                <div class="stat-card stat-cyan">
+                    <div class="stat-number">500</div>
+                    <div class="stat-label">Max Slots</div>
+                </div>
+                <div class="stat-card stat-neon">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-card stat-accent">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <button onclick="window.open('https://discord.gg/T2DPMaGQnM', '_blank')" class="btn btn-primary btn-large">
+                    <i class="icon-discord"></i>
+                    Join Discord
+                </button>
+            </div>
+            
+            <!-- Server IP -->
+            <div class="server-ip">
+                <span class="ip-label">Server IP: </span>
+                <span class="ip-address">play.azerto.com:7777</span>
+                <button onclick="copyServerIP()" class="copy-btn">
+                    <i data-lucide="copy"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Azerto Gaming RPG</h2>
+                <p class="section-description">
+                    Since 2020, we've been delivering the ultimate SAMP experience with custom features, 
+                    dedicated staff, and a thriving community of roleplay enthusiasts.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Gaming server infrastructure">
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon gradient-bg">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>High Performance Servers</h3>
+                            <p>Dedicated hardware ensuring lag-free gameplay and 99.9% uptime for uninterrupted gaming sessions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon cyan-gradient-bg">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Active Community</h3>
+                            <p>Join thousands of players in immersive roleplay scenarios with professional moderation and support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon neon-gradient-bg">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Custom Scripts</h3>
+                            <p>Unique gameplay mechanics, custom vehicles, businesses, and features you won't find anywhere else.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Server Features</h2>
+                <p class="section-description">
+                    Experience the most comprehensive SAMP server with features designed for ultimate roleplay immersion.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon gradient-bg">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h3>Custom Vehicles</h3>
+                    <p>Over 200 custom vehicles including supercars, motorcycles, boats, and aircraft with realistic handling.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon cyan-gradient-bg">
+                        <i data-lucide="building"></i>
+                    </div>
+                    <h3>Business System</h3>
+                    <p>Own and operate various businesses including restaurants, shops, gas stations, and entertainment venues.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon neon-gradient-bg">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Law Enforcement</h3>
+                    <p>Join the police force with realistic law enforcement systems, investigations, and justice procedures.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon gradient-bg">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h3>Housing System</h3>
+                    <p>Purchase and customize your own homes, apartments, and properties throughout Los Santos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon cyan-gradient-bg">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <h3>Job System</h3>
+                    <p>Choose from dozens of legal and illegal careers with realistic progression and rewards.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon neon-gradient-bg">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>Events & Tournaments</h3>
+                    <p>Participate in regular events, races, competitions, and special seasonal activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forums Section -->
+    <section id="forums" class="forums">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Community Forums</h2>
+                <p class="section-description">
+                    Connect with fellow players, share experiences, get support, and stay updated with the latest news.
+                </p>
+            </div>
+            
+            <div class="forums-content">
+                <div class="forums-features">
+                    <div class="forum-feature">
+                        <div class="forum-icon">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <div>
+                            <h3>General Discussion</h3>
+                            <p>Chat about gameplay, strategies, and connect with other players in our community.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-feature">
+                        <div class="forum-icon">
+                            <i data-lucide="help-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Support & Help</h3>
+                            <p>Get assistance from our staff team and experienced community members.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-feature">
+                        <div class="forum-icon">
+                            <i data-lucide="newspaper"></i>
+                        </div>
+                        <div>
+                            <h3>News & Updates</h3>
+                            <p>Stay informed about server updates, events, and important announcements.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forums-cta">
+                    <button onclick="window.open('https://azertogamingrpg.flarum.cloud/', '_blank')" class="btn btn-primary btn-large">
+                        <i data-lucide="external-link"></i>
+                        Visit Forums
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <i data-lucide="gamepad-2"></i>
+                        </div>
+                        <span class="nav-title">Azerto Gaming RPG</span>
+                    </div>
+                    <p class="footer-description">
+                        The ultimate San Andreas Multiplayer experience with custom features, 
+                        active community, and professional management since 2020.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><button onclick="scrollToSection('home')">Home</button></li>
+                        <li><button onclick="scrollToSection('about')">About Us</button></li>
+                        <li><button onclick="scrollToSection('features')">Features</button></li>
+                        <li><button onclick="scrollToSection('forums')">Forums</button></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Rules & Guidelines</a></li>
+                        <li><a href="#">Ban Appeals</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Contact Staff</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-connect">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="icon-discord"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer-server-info">
+                        <div class="server-ip-label">Server IP:</div>
+                        <div class="server-ip-value">play.azerto.com:7777</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azerto Gaming RPG. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
